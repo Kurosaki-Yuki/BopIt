@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.preference.PreferenceManager
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
@@ -12,12 +13,17 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 
 class SplashActivity : AppCompatActivity() {
+
+    val tagLog ="SplashActivity"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
-        val value = sharedPreferences.getString("splash_time", "1000")
+        val value = sharedPreferences.getString("splash_time", "2000")
+
+        Log.i(tagLog,"Value of splash_time:" + value)
 
         val fadeIn = AnimationUtils.loadAnimation(applicationContext, R.anim.fade)
         val sizeUp = AnimationUtils.loadAnimation(applicationContext, R.anim.size)
