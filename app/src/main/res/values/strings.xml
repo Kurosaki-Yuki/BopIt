@@ -4,4 +4,7 @@
     <string name="test">Hu Tao</string>
     <string name="mommy">Mommy?</string>
     <string name="a">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</string>
+    <string name="Preference1">Datos del jugador</string>
+    <string name="Preference2">Personalización del juego</string>
+    <string name="Preference3">Administración general</string>
 </resources>
