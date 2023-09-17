@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentAbout)
         }
         buttonConfig.setOnClickListener{
-            val intentAbout = Intent(this, ConfigActivity::class.java)
+            val intentAbout = Intent(this, SettingsActivity::class.java)
             startActivity(intentAbout)
         }
     }
