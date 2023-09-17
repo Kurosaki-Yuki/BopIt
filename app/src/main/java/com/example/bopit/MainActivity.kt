@@ -3,6 +3,7 @@ package com.example.bopit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
         buttonConfig.setOnClickListener{
             val intentAbout = Intent(this, SettingsActivity::class.java)
+            Log.d( "a","boton");
             startActivity(intentAbout)
         }
     }
