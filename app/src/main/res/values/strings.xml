@@ -7,7 +7,10 @@
     <string name="about_text">Acerca de</string>
     <string name="config_text">Configuraciones</string>
 
-    <string name="mommytao">MommyTao</string>
+    <string name="about">Este programa ha sido desarrollado por Vicente Villavicencio
+    de IDVRV en la universidad de talca
+    consiste en una version basica del juego
+    para fiestas "bopit"</string>
 
 
     <string name="Preference1">Datos del jugador</string>
