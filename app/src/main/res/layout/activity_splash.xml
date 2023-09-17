@@ -8,32 +8,14 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:id="@+id/testImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="137dp"
-        android:layout_marginBottom="391dp"
-        android:contentDescription="@string/test"
+        android:id="@+id/bopIt"
+        android:layout_width="416dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="76dp"
-        android:text="@string/a"
-        android:textAllCaps="true"
-        android:textColor="#8514D5"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@mipmap/bopit_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

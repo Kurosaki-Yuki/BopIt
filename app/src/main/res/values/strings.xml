@@ -1,10 +1,32 @@
 <resources>
     <string name="app_name">BopIt</string>
-    <string name="mommytao">MommyTao</string>
-    <string name="test">Hu Tao</string>
-    <string name="mommy">Mommy?</string>
+
     <string name="a">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</string>
+
+    <string name="test">Hu Tao</string>
+    <string name="about_text">Acerca de</string>
+    <string name="config_text">Configuraciones</string>
+
+    <string name="mommytao">MommyTao</string>
+
+
+
     <string name="Preference1">Datos del jugador</string>
+    
+    <string name="Nombre_Usuario">Nombre Usuario</string>
+    <string name="Max_score">Puntaje mas alto</string>
+    <string name="Score">0</string>
+
+
     <string name="Preference2">Personalización del juego</string>
+
+    <string name="Tema_app">Tema de la app</string>
+    <string name="Volumen_app">Nivel de volumen de la app</string>
+    <string name="Instructions">Instrucciones disponibles</string>
+    <string name="Letra_app">Tamaño de letra</string>
+
+
     <string name="Preference3">Administración general</string>
+
+    <string name="Restart_config">Reiniciar preferencias</string>
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/Preference1">
+
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="NoName"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/Nombre_Usuario" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="0"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/Max_score" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/Preference2">
+
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Noche"
+            android:title="@string/Tema_app"
+            app:entries="@array/Tema_nombres"
+            app:entryValues="@array/Tema_valores" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Medio"
+            android:title="@string/Volumen_app"
+            app:entries="@array/Vol_nombres"
+            app:entryValues="@array/Vol_valores" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:title="@string/Instructions"
+            app:entries="@array/Ins_nombres"
+            app:entryValues="@array/Ins_valores" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Mediano"
+            android:title="@string/Letra_app"
+            app:entries="@array/Letra_nombres"
+            app:entryValues="@array/Letra_valores" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/Preference3">
+
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/Restart_config" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="Tema_nombres">
+        <item>Dia</item>
+        <item>Noche</item>
+    </array>
+    <array name="Tema_valores">
+        <item>White</item>
+        <item>Black</item>
+    </array>
+
+    <array name="Vol_nombres">
+        <item>Silenciar</item>
+        <item>Bajo</item>
+        <item>Medio</item>
+        <item>Alto</item>
+        <item>Muy alto</item>
+    </array>
+    <array name="Vol_valores">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </array>
+
+    <array name="Ins_nombres">
+        <item>no</item>
+        <item>recuerdo</item>
+        <item>que</item>
+        <item>era</item>
+        <item>esto</item>
+    </array>
+    <array name="Ins_valores">
+        <item>no</item>
+        <item>recuerdo</item>
+        <item>que</item>
+        <item>era</item>
+        <item>esto</item>
+    </array>
+
+    <array name="Letra_nombres">
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+    </array>}
+    <array name="Letra_valores">
+        <item>10</item>
+        <item>25</item>
+        <item>60</item>
+    </array>
+
+</resources>

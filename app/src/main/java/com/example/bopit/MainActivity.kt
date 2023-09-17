@@ -10,10 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonAbout = findViewById<Button>(R.id.button)
+        val buttonAbout = findViewById<Button>(R.id.buttonA)
+        val buttonConfig = findViewById<Button>(R.id.buttonC)
 
         buttonAbout.setOnClickListener{
             val intentAbout = Intent(this, AboutActivity::class.java)
+            startActivity(intentAbout)
+        }
+        buttonConfig.setOnClickListener{
+            val intentAbout = Intent(this, ConfigActivity::class.java)
             startActivity(intentAbout)
         }
     }
