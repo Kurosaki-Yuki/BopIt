@@ -6,6 +6,9 @@
     <string name="proto">prototipo alpha 0.0</string>
     <string name="about_text">Acerca de</string>
     <string name="config_text">Configuraciones</string>
+    <string name="stop">Detener/reproducir cancion</string>
+    <string name="yippie">Yippie</string>
+    <string name="uaaugh">Uaaughh</string>
 
     <string name="about">Este programa ha sido desarrollado por Vicente Villavicencio
     de IDVRV en la universidad de talca
