@@ -7,17 +7,15 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 
-private lateinit var mediaPlayer: MediaPlayer
 private lateinit var yippiePlayer: MediaPlayer
 private lateinit var screamPlayer: MediaPlayer
-private var plays = true
-
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val buttonGame = findViewById<Button>(R.id.buttonG)
         val buttonAbout = findViewById<Button>(R.id.buttonA)
         val buttonConfig = findViewById<Button>(R.id.buttonC)
 
@@ -25,10 +23,12 @@ class MainActivity : AppCompatActivity() {
         val buttonYippie = findViewById<Button>(R.id.yippieButton)
         val buttonScream = findViewById<Button>(R.id.screamButton)
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.benis_music)
-        mediaPlayer.start()
-        mediaPlayer.isLooping = true
 
+
+        buttonGame.setOnClickListener{
+            val intentAbout = Intent(this, GameActivity::class.java)
+            startActivity(intentAbout)
+        }
         buttonAbout.setOnClickListener{
             val intentAbout = Intent(this, AboutActivity::class.java)
             startActivity(intentAbout)
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentAbout)
         }
 
-        buttonStop.setOnClickListener {
+        /*buttonStop.setOnClickListener {
             if(plays){
                 plays = false
                 mediaPlayer.pause()
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 mediaPlayer.start()
             }
 
-        }
+        }*/
 
         buttonYippie.setOnClickListener {
             yippiePlayer = MediaPlayer.create(this, R.raw.yippee_tbh)
@@ -60,18 +60,6 @@ class MainActivity : AppCompatActivity() {
             screamPlayer.start()
         }
     }
-    override fun onPause() {
-        super.onPause()
-        if(mediaPlayer.isPlaying){
-            mediaPlayer.pause()
-        }
-    }
 
-    override fun onResume() {
-        super.onResume()
-        if(!mediaPlayer.isPlaying && plays){
-            mediaPlayer.start()
-        }
-    }
 
 }
