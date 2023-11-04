@@ -11,6 +11,11 @@
     <string name="yippie">Yippie</string>
     <string name="uaaugh">Uaaughh</string>
 
+    <string name="click">Aprieta</string>
+    <string name="swipe">Desliza</string>
+    <string name="holds">Mantiene</string>
+    <string name="shake">Agita</string>
+
     <string name="about">Este programa ha sido desarrollado por Vicente Villavicencio
     de IDVRV en la universidad de talca
     consiste en una version basica del juego

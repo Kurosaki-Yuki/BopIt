@@ -7,8 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 
-private lateinit var yippiePlayer: MediaPlayer
-private lateinit var screamPlayer: MediaPlayer
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,11 +17,6 @@ class MainActivity : AppCompatActivity() {
         val buttonGame = findViewById<Button>(R.id.buttonG)
         val buttonAbout = findViewById<Button>(R.id.buttonA)
         val buttonConfig = findViewById<Button>(R.id.buttonC)
-
-        val buttonStop = findViewById<Button>(R.id.stopButton)
-        val buttonYippie = findViewById<Button>(R.id.yippieButton)
-        val buttonScream = findViewById<Button>(R.id.screamButton)
-
 
 
         buttonGame.setOnClickListener{
@@ -38,28 +32,5 @@ class MainActivity : AppCompatActivity() {
             Log.d( "a","boton")
             startActivity(intentAbout)
         }
-
-        /*buttonStop.setOnClickListener {
-            if(plays){
-                plays = false
-                mediaPlayer.pause()
-            }else if(!plays){
-                plays = true
-                mediaPlayer.start()
-            }
-
-        }*/
-
-        buttonYippie.setOnClickListener {
-            yippiePlayer = MediaPlayer.create(this, R.raw.yippee_tbh)
-            yippiePlayer.start()
-        }
-
-        buttonScream.setOnClickListener {
-            screamPlayer = MediaPlayer.create(this, R.raw.tbh_shatter)
-            screamPlayer.start()
-        }
     }
-
-
 }
